@@ -1,0 +1,429 @@
+/*
+Theme Name: Instagram
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* VARIÁVEIS */
+:root{
+  
+}
+
+/*BODY*/
+body{
+	font: Helvetica, Roboto, Arial, sans-serif;
+	color: #262626;
+	
+
+}
+
+/*TOPO*/
+header{
+	border-bottom: 1px solid #DBDBDB ;
+}
+header section{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+header span a figure img{
+	width: 100%;	
+}
+
+.login{
+	height: 25px;
+	border: none;
+	background-color: #0095F6;
+	color: white;
+	font-size: 9px;
+	border-radius: 2px;
+}
+
+.signin{
+	height: 25px;
+	border: none;
+	background-color: white;
+	color: #0095F6;
+	font-size: 9px;
+	border-radius: 2px;
+}
+
+/*PÁGINA INICIAL*/
+
+main{
+	background-color: #FAFAFA;
+	
+}
+
+li{
+	list-style: none;
+}
+
+
+
+/*  Box Foto, Follow, publicações, seguidores, etc */
+	main .profile-content{
+		display: flex;
+		max-width: 360px;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.profile-photo{
+		width: 87px;
+		margin-right: 20px;	
+	}
+
+	.profile-photo figure img{ 
+		width: 100%;
+		border-radius: 100%;
+		background: linear-gradient(#FAFAFA,#FAFAFA) padding-box, linear-gradient(165deg, rgba(225,62,102,1) 38%, rgba(249,158,77,1) 68%) border-box;
+		border-width: 2px;
+		border-style: solid;
+		border-color: transparent;
+		padding: 2px;				
+	}
+
+	.profile-info{
+		flex-grow: 1;		
+		display: flex;
+		flex-direction: column;		
+	}
+
+	.profile-follow{
+		display: flex;
+		width: 100%;
+		height: 23%;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+
+	.profile-follow h1{
+		margin-right: 20px;
+		font-size: 20px;
+		color: #717171;
+	}
+
+	.profile-follow button{
+		background-color: #0095F6;
+		color: white;
+		border: none;
+		border-radius: 2px;
+		font-size: 9px;
+	}
+
+	.profile-data{
+		height:100%;
+		display:flex;
+		flex-direction: column;
+		margin-top:5px;
+		justify-content: space-around;			
+	}
+
+	.profile-data p span{
+		font-weight: bold;
+		margin-right: 5px;		
+	}
+	
+	.description-info{
+		margin-top: 5px;
+	}
+
+	.description-info h2{
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	.description-info ul li a{
+		text-decoration: none;
+		color: #12376A;
+		font-weight: bold;
+	}
+
+
+	/* Box da "Kenzie" , "Depoimentos", "Parceria" */
+	.highlighted-stories{
+		width: 100%;
+	}
+
+	.highlighted-stories ul{
+		display:flex;		
+		margin-bottom: 20px;				
+	}
+
+	.highlighted-stories ul li{
+		margin-right: 30px;
+		width: 60px;
+		
+	}
+
+	.highlighted-stories ul li figure{
+		width: 56px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 14px;
+		
+	}
+
+	.highlighted-stories ul li figure img{
+		width: 100%;
+		border-radius: 100%;
+		padding: 1px;
+		border: 2px solid #DBDBDB;
+	}
+	
+	/* Box "Publicações" , "Reels", "Videos" */
+	.profile-posts nav{
+		border-top: 1px solid #DBDBDB;
+		
+	}
+	.profile-posts nav::before{
+		
+	}
+
+	.profile-posts nav ul{
+		display: flex;		
+		width: 100%;
+		margin-bottom: 20px;
+		justify-content: space-around;
+		font-size: 12px;
+		align-items: center;
+		height: 30px;	
+	}
+	.profile-posts nav ul li{
+		display: flex;		
+		align-items: center;	
+		height:100%;
+		
+	}
+
+	.profile-posts nav ul li a{
+		text-decoration: none;
+		
+		
+	}
+	.pubtopborder{
+		border-top: 1px solid black;
+	}
+
+	.pub{
+		font-weight: bold;
+		color: black;
+	}
+
+	.reelsvideos{
+		color: #717171;		
+	}
+
+
+	.profile-posts nav ul li img{
+		margin-right: 5px;
+		width: 100%;
+	}
+
+	
+
+	/* Box das imagens galeria */
+	.galeria ul{
+		display:flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.galeria ul li{
+		width: 33%;
+		
+	}
+
+
+
+	.galeria ul li a figure img{
+		width: 100%;
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@media screen and (max-width:767px){
+		.search{
+			display: none;
+		}
+	}
+
+
+
+	@media  screen and (min-width:768px) {
+		header section{
+			margin: 0 auto;
+			width: 900px;
+		}
+
+		.search{
+			display: flex;
+			align-items: stretch;
+			border: 2px solid #DBDBDB;
+			background-color: #FAFAFA;
+			border-radius: 5px;
+		}
+
+		.searchbtn figure{
+			width: 20px;
+		}
+
+		.searchbtn img{
+			width: 100%;
+			position: relative;
+			top: 2px;
+		}
+
+		.search input{
+			border: none;
+			background-color: #FAFAFA;
+			padding: 0;
+			color:#717171;
+		}
+
+
+		/*  Box Foto, Follow, publicações, seguidores, etc */
+
+		.container{
+			display: flex;
+			flex-direction: column;
+			width: 900px;
+			margin:0 auto;
+		}
+		main .profile-content{
+			display:flex;			
+			max-width: 900px;
+			width: 900px;
+			justify-content: flex-end;	
+		}
+
+		.profile-photo{
+			width: 150px;
+			margin-right: 60px;
+			margin-left: 20px;						
+		}
+		.profile-follow{
+			margin-bottom: 15px;
+		}
+	
+		.profile-follow h1{			
+			font-size: 28px;			
+		}
+
+		.profile-follow button{
+			width: 50px;
+			font-size: 12px;
+			border-radius: 5px;
+		}
+
+		
+
+		.profile-data{			
+			flex-direction: row;			
+			justify-content: flex-start;		
+		}
+
+		.profile-data p{			
+			margin-right: 40px;		
+		}
+
+		.description-info{
+			width: 670px;
+			margin-top: -75px;
+		}
+
+		.description-info h2{
+			margin-bottom: 10px;
+		}
+
+	/* Box da "Kenzie" , "Depoimentos", "Parceria" */
+	.highlighted-stories{
+		margin-top: 30px;
+	}
+	.highlighted-stories ul li{		
+		width: 88px;		
+	}
+
+	.highlighted-stories ul li figure{
+		width: 88px;		
+		font-size: 16px;
+		
+	}
+
+	/* Box das imagens galeria */
+	.galeria{
+		width:  100%;		
+	}
+
+	.galeria ul{		
+		width:  100%;
+		
+		
+	}
+
+	.galeria ul li{
+		width:  285px;
+		height: 285px;
+		margin-bottom: 22.5px;
+		
+	}
+
+
+
+	.galeria ul li a figure img{
+		width:  285px;
+		height: 285px;
+		
+	}
+
+	}
